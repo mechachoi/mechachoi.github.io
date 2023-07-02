@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="ja">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<!-- #BeginEditable "doctitle" -->
+<title>ダイナミックWebテンプレートから新規作成したサンプル - オレンジ</title>
+<!-- #EndEditable -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div id="header">
+	<div class="container">
+		<div class="title">
+		<a href="./">サイトタイトル</a></div>
+	</div>
+</div>
+<div class="wrapper">
+	<div id="page_content">
+		<div class="article">
+			<!-- #BeginEditable "content" -->
+			<h1>見出し1</h1>
+			<p>段落</p>
+			<p class="nav"><a href="#">前のページ</a> <a href="#">次のページ</a></p>
+		<!-- #EndEditable -->
+			<p class="right"><a href="#">▲このページのトップへ</a></p>
+		</div>
+	</div>
+	<div id="sidebar">
+		<div class="aside">
+			<h3>メニュー</h3>
+			<ul>
+				<li><a href="./">トップ</a></li>
+				<li>メニュー1</li>
+				<li>メニュー2</li>
+				<li>メニュー3</li>
+			</ul>
+			<h3>リンク</h3>
+			<ul>
+				<li>リンク1</li>
+				<li>リンク2</li>
+				<li>リンク3</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="container">
+&copy; 2019 [あなたの名前]</div>
+</div>
+
+</body>
+
+</html>
