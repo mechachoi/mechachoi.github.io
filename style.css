@@ -1,178 +1,68 @@
-﻿.article, .aside {
-	text-align: left;
-	margin: 10px 10px 1em 10px;
-	padding-top: 10px;
-	padding-bottom:10px;
-}
-#header {
-	background-color: #FFFFFF;
-	text-align: left;
-}
-#header h1{
-	margin: 0px;
-	padding:0;
-}
-#header h1 a {
-	color: #FF6600;
-}
-#header img{
-	border-style:none
-}
-#header .title a {
-	font-size: 2em;
-	color: #FF6600;
-	font-weight: bolder;
+* {
+  box-sizing: border-box;
 }
 
-#page_content,#sidebar {
-	background-color: #FFFFFF;
-}
-#footer {
-	background-color: #FFFFFF;
-	clear: both;
-	padding: 5px;
-}
-.wrapper {
-}
-.container {
-	padding: 5px 10px 5px 10px;
-	position: relative;
-	margin: auto;
-}
 body {
-	padding: 0px;
-	margin: 0px;
-	background-color: #FFCC66;
-	text-align: center;
-	color: #333;
-	font-family: Meiryo,Arial, Helvetica, sans-serif;
-	font-size: 1em;
-}
-#page_content h1,.aside h3 {
-	margin-top: 0px;
-	text-decoration: none;
-	border-left-style: solid;
-	border-left-color: #f60;
-	border-left-width: .2em;
-	padding-left: .2em;
-	line-height: 1.1em;
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
 }
 
-.aside h3 {
-	clear: both;
-	margin: 0 0 .5em 0;
-	padding-left: .2em;
-	border-left-width: .4em;
-	padding-left: .4em;
-}
-h2, #page_content h3, h4, h5, h6, h2 a, #page_content h3 a {
-	line-height: 1.1em;
-	clear: both;
-	padding: .2em 0;
-	background-color: #f60;
-	color: #FFF;
-}
-h1 a:hover, h2 a:hover,h3 a:hover{
-	text-decoration:underline!important
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
 }
 
-a:link {
-	color: #06c;
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-}
-a:hover {
-	color: #FF0000;
-}
-.aside ul, ul.list {
-	list-style-type: none;
-	margin: 0px 0px 1em 0px;
-	padding: 0px;
-	border-top: dotted 1px;
-}
-.aside ul li, ul.list li{
-	padding: 0.5em 0px;
-	margin: 0px;
-	border-bottom: dotted 1px;
-}
-.aside li a, .list a{
-	display: block;
-}
-.aside ol,ul.rel {
-	margin: 0px 0px 10px 2em;
-	padding: 0px;
-}
-.aside ol li, ul.rel li {
-	margin: 0px;
-	padding: 5px 0px 5px 0px;
-}
-.center {
-	text-align: center;
-}
-.right {
-	text-align: right;
-}
-dt{
-	font-weight:bold
-}
-.nav{border-style: dotted none;	border-width: 1px;	padding: 20px;	text-align: center;	clear: both;}
-.nav a {
-	margin: 20px 5px 20px 5px;
-	padding: 10px;
-	background-color: #FF6600;
-	color: #fff;
-	border-radius: 7px;
-	-webkit-border-radius: 7px; /* Safari,Google Chrome用 */;
-	-moz-border-radius: 7px; /* Firefox用 */;
-	text-decoration: none;
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+  float: left;
+  width: 75%;
 }
 
-@media only screen{
-img {max-width: 100%;height: auto;}
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
 }
 
-@media(min-width:1024px){
-.container{
-	width:975px
-}
-.wrapper {
-	display: inline-block;
-	*display: inline; 
-	*zoom: 1; 
-	width: 985px;
-	margin-bottom: 10px;
-	margin-top:10px;
-}
-#page_content {
-	margin: auto 0px;
-	width: 650px;
-	float: right;
-}
-#sidebar {
-	float: left;
-	width: 320px;
-	margin: auto 0px 10px 0px;
-}
-#page_content, #sidebar {
-	border-radius: 7px;
-	-webkit-border-radius: 7px; /* Safari,Google Chrome用 */
-	-moz-border-radius: 7px; /* Firefox用 */
-}
-.article, .aside {
-	padding-top: -10px;
-	margin-top: 0;
-	margin-bottom:0
-}
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
 }
 
-@media only screen and (min-width: 1124px) {
-.container{width:1075px}
-.wrapper {
-	width: 1085px;
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
 }
-#page_content {
-	width: 750px;
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
 }
